@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #09090B;
+  --color-surface: #121214;
+  --color-elevated: #1C1C20;
+  --color-primary: #A58cf4;
+  --color-primary-hover: #433075;
+  --color-main-text: #FAFAFA;
+  --color-secondary-text: #A1A1AA;
+  --color-border: #303036;
+
+  --font-mono: "Space Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--color-background);
+  color: var(--color-main-text);
+  font-family: var(--font-mono);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+@layer base {
+  input::placeholder,
+  textarea::placeholder {
+    opacity: 0.4;
+  }
+}
