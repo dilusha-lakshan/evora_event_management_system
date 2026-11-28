@@ -2,6 +2,7 @@ import Button from '../../../components/common/Button'
 import Card from '../../../components/common/Card'
 import Input from '../../../components/common/Input'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function LoginPage() {
   const [email, setEmail] = useState('')
@@ -134,12 +135,12 @@ function LoginPage() {
           <div className="mt-5 border-t border-border pt-4 text-center">
             <p className="text-sm text-secondary-text">
               Don't have an account?{' '}
-              <button
-                type="button"
+              <Link
+                to="/register"
                 className="font-bold text-primary transition-colors hover:text-primary-hover"
-              >
+                >
                 Create an account
-              </button>
+              </Link>
             </p>
           </div>
         </Card>

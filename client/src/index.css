@@ -34,3 +34,10 @@ textarea,
 select {
   font: inherit;
 }
+
+@layer base {
+  input::placeholder,
+  textarea::placeholder {
+    opacity: 0.4;
+  }
+}

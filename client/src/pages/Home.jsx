@@ -1,6 +1,7 @@
 import Button from '../components/common/Button'
 import Card from '../components/common/Card'
 import Input from '../components/common/Input'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -14,6 +15,13 @@ function Home() {
         <h2 className="text-lg text-secondary">
           Comming Soon
           </h2>
+
+          <Link
+                to="/register"
+                className="font-bold text-primary transition-colors hover:text-primary-hover"
+                >
+                Create an account
+              </Link>
 
       </div>
     </div>
