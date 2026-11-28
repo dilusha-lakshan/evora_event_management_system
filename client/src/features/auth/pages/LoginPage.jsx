@@ -83,7 +83,7 @@ function LoginPage() {
         <Card className="p-6">
           <div className="mb-5 text-center">
             <h2 className="text-xl font-bold sm:text-2xl">
-              Welcome back.
+              WELCOME BACK
             </h2>
           </div>
 
@@ -114,12 +114,12 @@ function LoginPage() {
             />
 
             <div className="flex justify-end">
-              <button
-                type="button"
+              <Link
+                to="/forgot-password"
                 className="text-sm text-primary transition-colors hover:text-primary-hover"
               >
                 Forgot password?
-              </button>
+              </Link>
             </div>
 
             <Button
